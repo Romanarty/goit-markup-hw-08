@@ -12,8 +12,55 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/banner.jpg");
+    url("./images/banner.jpg");
+
+  @media (max-width: 767px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("././images/banner/1xbanner.jpeg");
+    background-size: contain;
+    max-width: 480px;
+    max-height: 400px;
+    padding: 118px 60px;
+    width: 100%;
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("./images/banner/2xbanner.jpeg");
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("./images/banner/banner1x-tablet.jpeg");
+    background-size: contain;
+    max-width: 768px;
+    max-height: 400px;
+    padding: 118px 204px;
+    width: 100%;
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("./images/banner/banner2x-tablet.jpeg");
+    }
+  }
 }
+
 h1 {
   width: 646px;
   margin-top: 200px;
@@ -24,6 +71,27 @@ h1 {
   line-height: 60px;
   letter-spacing: 0.06em;
   text-align: center;
+  @media (max-width: 767px) {
+    font-size: 26px;
+    line-height: 42px;
+    letter-spacing: 0.06em;
+    display: block;
+    max-width: 360px;
+    max-height: 84px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: block;
+    width: 360px;
+    height: 84px;
+    margin: auto;
+    margin-bottom: 30px;
+    align-items: center;
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 42px;
+  }
 }
 
 .button {

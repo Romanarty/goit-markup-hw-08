@@ -201,8 +201,29 @@
   }
   .cardset__text {
     max-height: 70px;
+    text-align: left;
+  }
+  .cardset__text h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    padding-bottom: 0px;
+    text-align: left;
+  }
+  .cardset__text p {
+    text-align: left;
   }
 
+  .container {
+    display: block;
+    flex-direction: column;
+    width: calc(100% / 1 - 30px);
+    margin: auto;
+    padding: 60px 0;
+  }
   .container__button {
     width: 362px;
     margin-left: auto;
@@ -229,45 +250,6 @@
     font-weight: 500;
     line-height: 26px;
     letter-spacing: 0.03em;
-  }
-
-  .overlay p {
-    font-family: Roboto;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 28px;
-    letter-spacing: 0.03em;
-    text-align: left;
-  }
-
-  .container {
-    display: block;
-    flex-direction: column;
-    width: calc(100% / 1 - 30px);
-    margin: auto;
-    padding: 60px 0;
-  }
-
-  .cardset__thumb p {
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
-    letter-spacing: 0.03em;
-    text-align: left;
-  }
-
-  .cardset__thumb h2 {
-    font-family: Roboto;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 36px;
-    letter-spacing: 0.06em;
-    text-align: left;
-    padding: 0;
   }
 
   /* Footer */
@@ -496,10 +478,19 @@
 
   .cardset__thumb {
     width: 354px;
-    height: 440px;
+    height: 404px;
     margin-right: 15px;
     margin-left: 15px;
   }
+  .cardset__thumb h2 {
+    padding-bottom: 0;
+    line-height: 16px;
+  }
+  .cardset__text {
+    max-height: 75px;
+    width: 320px;
+  }
+
   .cardset li:first-child .cardset__text {
     padding-bottom: 36px;
     margin-bottom: 50px;
@@ -510,8 +501,8 @@
   }
 
   .cardset img {
-    max-height: 294px;
-    max-width: 354px;
+    height: 294px;
+    width: 354px;
   }
 
   .cardset__thumb p {
@@ -523,12 +514,12 @@
     letter-spacing: 0.03em;
     text-align: left;
   }
-
   .cardset__thumb h2 {
     font-family: Roboto;
     font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
+    font-weight: bold;
+    font-weight: bold;
+
     line-height: 36px;
     letter-spacing: 0.06em;
     text-align: left;
@@ -554,7 +545,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    max-width: 600px;
+    width: 600px;
     margin: auto;
   }
 }
@@ -592,80 +583,5 @@ address {
         rgba(47, 48, 58, 0.4)
       ),
       url("../../images/banner/banner2x-tablet.jpeg");
-  }
-}
-/* Desktop */
-@media (min-width: 1200px) {
-  .mobile-container {
-    max-width: 1200px;
-    margin: auto;
-  }
-
-  header {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0px 15px;
-  }
-  .header {
-    margin: 0px;
-    margin: auto;
-    max-width: 1200px;
-  }
-
-  .header-contacts li:first-child {
-    margin-right: 30px;
-  }
-
-  .mobile-nav.js-menu-container,
-  .menu-button {
-    display: none;
-  }
-
-  .button__item {
-    margin-right: 5px;
-  }
-
-  .cardset__thumb {
-    width: 370px;
-    height: 404px;
-  }
-
-  .cardset__text h2 {
-    padding-top: 0px;
-    text-align: left;
-  }
-
-  .mobile-footer,
-  .address {
-    margin: 0;
-    text-align: left;
-  }
-
-  .mobile-footer {
-    max-width: 500px;
-  }
-  form {
-    display: flex;
-  }
-
-  .form__input {
-    max-width: 358px;
-    margin-right: 0;
-  }
-
-  .form__input {
-    margin-top: 20px;
-    margin-right: 0;
-    display: flex;
-  }
-  .footer-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .form__button {
-    margin: 0;
   }
 }

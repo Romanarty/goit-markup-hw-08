@@ -25,6 +25,11 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  @media (max-width: 767px) {
+    max-width: 450px;
+    max-height: 609px;
+  }
 }
 
 .button-close {
@@ -48,11 +53,19 @@
   align-items: center;
   margin-bottom: 40px;
 }
+
 .modalform__list {
   display: block;
   margin: 0 auto;
   padding-left: 40px;
   padding-right: 40px;
+  @media screen and(min-width:767px) {
+    display: block;
+    max-width: 370px;
+    margin: 0px;
+    padding: 0px;
+    margin: auto;
+  }
 }
 
 .modalform__h2 {
@@ -67,6 +80,15 @@
   text-align: center;
   letter-spacing: 0.03em;
   padding: 0;
+
+  @media screen and(min-width:767px) {
+    line-height: 30px;
+    letter-spacing: 0.03em;
+
+    display: block;
+    width: 370px;
+    margin-top: 0;
+  }
 }
 
 input[id="comment"] {
@@ -213,6 +235,14 @@ label p {
   letter-spacing: 0.03em;
   color: var(--graphite);
   display: inline-block;
+  @media screen and (min-width: 767px) {
+    font-size: 12px;
+
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+    text-align: left;
+  }
 }
 
 .modalform__button {

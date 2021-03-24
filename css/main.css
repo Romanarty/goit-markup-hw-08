@@ -533,7 +533,7 @@ footer h3 {
     -webkit-box-align: baseline;
     -ms-flex-align: baseline;
     align-items: baseline;
-
+    min-width: 593px;
     margin: 60px 80px;
   }
 }

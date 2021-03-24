@@ -1,4 +1,10 @@
 //  Примеры работ
+.projects {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
 .projects__list {
   position: relative;
   display: flex;

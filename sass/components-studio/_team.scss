@@ -13,11 +13,19 @@
   @include flex-center();
   padding: 0px;
   margin: 0px;
-
   align-items: center;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .our-team {
+  @media screen and (max-width: 767px) {
+    background-color: #f5f4fa;
+    padding: 60px 0px;
+  }
+
   background-color: var(--grey);
   text-align: center;
   display: block;
@@ -35,6 +43,10 @@
   border-radius: 0px 0px 4px 4px;
   background-color: var(--main-white);
   height: 428px;
+  @media screen and (max-width: 767px) {
+    height: 622px;
+    margin: auto;
+  }
 }
 .team__text {
   font-family: Roboto;
