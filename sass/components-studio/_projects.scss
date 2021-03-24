@@ -1,0 +1,29 @@
+//  Примеры работ
+.projects__list {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0px;
+}
+.description {
+  position: absolute;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--main-white);
+  @include flex-center(center);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  & p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}

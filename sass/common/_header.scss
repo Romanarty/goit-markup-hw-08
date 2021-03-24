@@ -1,0 +1,28 @@
+/* header */
+header {
+  border-bottom: var(--border) 1px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  padding-right: 15px;
+  padding-left: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1170px;
+  margin: auto;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  outline: 1px var(--border);
+  min-height: 80px;
+}
+
+.mobile-nav__links {
+  display: none;
+}

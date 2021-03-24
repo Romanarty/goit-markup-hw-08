@@ -1,0 +1,44 @@
+.nav {
+  @include flex-between();
+  width: 294px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__link {
+  color: var(--main-black);
+  text-decoration: none;
+  padding: 32px 0px;
+  font-size: 14px;
+  display: block;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-align: left;
+
+  &:hover,
+  &:focus {
+    color: var(--hover);
+  }
+}
+.nav__link--current-page {
+  position: relative;
+  font-size: 14px;
+  display: block;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  padding: 32px 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: var(--hover);
+    height: 4px;
+    border-radius: 2px;
+    margin-top: 28px;
+  }
+}

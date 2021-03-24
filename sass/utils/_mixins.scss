@@ -1,0 +1,41 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+// @include flex-center()
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+// @include flex-between()
+
+@mixin header-font() {
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+// @include header-font();
+
+@mixin button() {
+  display: flex;
+  align-items: center;
+  background-color: var(--hover);
+  color: var(--main-white);
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  min-width: 200px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+// @include button();

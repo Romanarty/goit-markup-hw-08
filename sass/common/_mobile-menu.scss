@@ -1,0 +1,79 @@
+// Мобилка до 767px
+
+.mobile-nav {
+  display: block;
+}
+
+.menu-button {
+  padding: 2px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: #fff;
+  margin-right: auto;
+}
+
+.menu-button .js-close-menu {
+  display: none;
+}
+
+.menu-button.is-open .js-close-menu {
+  display: block;
+}
+.menu-button.is-open .js-open-menu {
+  display: none;
+}
+
+.hero {
+  background-image: url("../../images/banner/1xbanner.jpeg");
+  background-size: contain;
+  max-width: 480px;
+  background-size: contain;
+}
+h1 {
+  font-family: Roboto;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 42px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  display: block;
+  max-width: 360px;
+  max-height: 84px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-family: Roboto;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding-top: 0px;
+  padding-bottom: 30px;
+}
+
+h3 {
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+p {
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #757575;
+}
