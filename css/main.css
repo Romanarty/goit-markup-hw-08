@@ -178,6 +178,9 @@ span {
 
 /* header */
 header {
+  max-width: 1200px;
+  padding: 0px 15px;
+  margin: auto;
   border-bottom: 1px solid #ececec;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -188,10 +191,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 1200px;
-  padding: 0px 15px;
   position: relative;
-  margin: auto;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -237,7 +237,6 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  outline: 1px var(--border);
   min-height: 80px;
 }
 
@@ -263,9 +262,10 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 294px;
-  margin: 0;
+  margin-left: 90px;
+  margin: auto;
   padding: 0;
+  min-width: 300px;
 }
 
 @media screen and (max-width: 767px) {
@@ -282,7 +282,8 @@ header {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-right: 84px;
+    margin: 0px 85px;
+    min-width: 300px;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
