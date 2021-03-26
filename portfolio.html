@@ -11,7 +11,7 @@
     />
     <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/portfolio.css" />
-    <link rel="stylesheet" href="./portfolio-mobile.css" />
+    <!-- <link rel="stylesheet" href="./portfolio-mobile.css" /> -->
   </head>
   <body>
     <div class="mobile-container">
@@ -24,13 +24,14 @@
           aria-controls="mobile-menu"
         >
           <svg
-            width="40px"
-            height="40px"
+            width="24px"
+            height="24px"
             aria-label="Переключатель мобильного меню"
           >
             <use href="./svg-mobile/sprite-mobile-menu.svg#icon-menu-nav"></use>
           </svg>
         </button>
+
         <div class="header">
           <nav class="page-header">
             <ul class="nav">
@@ -39,33 +40,33 @@
               </li>
               <li>
                 <a href="./portfolio.html" class="nav__link--current-page">
-                  <span>Портфолио</span>
-                </a>
+                  <span>Портфолио </span></a
+                >
               </li>
               <li><a href="#" class="nav__link"> Контакты </a></li>
             </ul>
           </nav>
-          <ul class="header-contacts">
-            <li>
-              <a href="mailto:info@devstudio.com" class="contacts-link__mail">
-                <svg class="mail-icon" width="16" height="12">
-                  <use href="./svg/sprite.svg#icon-mail" />
-                </svg>
-
-                info@devstudio.com
-              </a>
-            </li>
-
-            <li>
-              <a href="tel:+380961111111" class="contacts-link__phone">
-                <svg class="phone-icon" width="10" height="16">
-                  <use href="./svg/sprite.svg#icon-smartphone" />
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
         </div>
+        <ul class="header-contacts">
+          <li>
+            <a href="mailto:info@devstudio.com" class="contacts-link__mail">
+              <svg class="mail-icon" width="16" height="12">
+                <use href="./svg/sprite.svg#icon-mail" />
+              </svg>
+
+              info@devstudio.com
+            </a>
+          </li>
+
+          <li>
+            <a href="tel:+380961111111" class="contacts-link__phone">
+              <svg class="phone-icon" width="10" height="16">
+                <use href="./svg/sprite.svg#icon-smartphone" />
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
       </header>
 
       <main class="container">
@@ -77,8 +78,8 @@
             aria-controls="mobile-menu"
           >
             <svg
-              width="40px"
-              height="40px"
+              width="18px"
+              height="18px"
               aria-label="Переключатель мобильного меню"
             >
               <use
@@ -317,7 +318,6 @@
           </ul>
         </section>
       </main>
-
       <footer>
         <div class="footer-container">
           <div class="mobile-footer">
@@ -352,32 +352,32 @@
 
               <ul class="social-links">
                 <li>
-                  <a href="" class="link__item">
-                    <svg>
+                  <a href="">
+                    <svg width="22px" height="22px">
                       <use href="./svg/sprite.svg#icon-instagram-footer" />
                     </svg>
                   </a>
                 </li>
 
                 <li>
-                  <a href="" class="link__item">
-                    <svg>
+                  <a href="">
+                    <svg width="22px" height="22px">
                       <use href="./svg/sprite.svg#icon-twitter-footer" />
                     </svg>
                   </a>
                 </li>
 
                 <li>
-                  <a href="" class="link__item">
-                    <svg>
+                  <a href="">
+                    <svg width="22px" height="22px">
                       <use href="./svg/sprite.svg#icon-facebook-footer" />
                     </svg>
                   </a>
                 </li>
 
                 <li>
-                  <a href="" class="link__item">
-                    <svg>
+                  <a href="">
+                    <svg width="22px" height="22px">
                       <use href="./svg/sprite.svg#icon-linkedin-footer" />
                     </svg>
                   </a>
@@ -395,13 +395,13 @@
                   class="footer-input"
                   placeholder="E-mail"
                 />
+                <button class="form__button" type="submit">
+                  Подписаться
+                  <svg class="form__svg" width="24px" height="24px">
+                    <use href="./svg/sprite-form.svg#icon-var-opt"></use>
+                  </svg>
+                </button>
               </div>
-              <button class="form__button" type="submit">
-                Подписаться
-                <svg class="form__svg" width="24px" height="24px">
-                  <use href="./svg/sprite-form.svg#icon-var-opt"></use>
-                </svg>
-              </button>
             </div>
           </form>
         </div>

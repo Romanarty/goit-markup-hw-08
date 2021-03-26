@@ -19,14 +19,14 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1.1);
-  min-width: 528px;
-  min-height: 581px;
+  max-width: 528px;
+  max-height: 581px;
   background-color: var(--main-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  @media (max-width: 767px) {
+  @media (max-width: 1199px) {
     max-width: 450px;
     max-height: 609px;
   }
@@ -49,45 +49,28 @@
 }
 
 /* Modal stiling */
-.modalform .button {
-  align-items: center;
-  margin-bottom: 40px;
-}
 
 .modalform__list {
-  display: block;
-  margin: 0 auto;
-  padding-left: 40px;
-  padding-right: 40px;
-  @media screen and(min-width:767px) {
-    display: block;
-    max-width: 370px;
-    margin: 0px;
-    padding: 0px;
-    margin: auto;
+  margin: auto;
+  padding: 40px;
+  @media screen and(max-width:1199px) {
+    max-width: 450px;
   }
 }
 
 .modalform__h2 {
-  display: block;
-  margin-top: 40px;
-  margin-bottom: 12px;
-  justify-content: center;
-  font-style: normal;
-  font-weight: bold;
+  font-family: Roboto;
   font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
   line-height: 23px;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   padding: 0;
+  margin-bottom: 12px;
 
-  @media screen and(min-width:767px) {
+  @media screen and (max-width: 1199px) {
     line-height: 30px;
-    letter-spacing: 0.03em;
-
-    display: block;
-    width: 370px;
-    margin-top: 0;
   }
 }
 
@@ -98,8 +81,27 @@ input[id="comment"] {
   border-radius: 4px;
 }
 
-label p {
+.modalform__label p {
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 12px;
+  justify-content: center;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  padding: 0;
   margin: 0;
+
+  @media screen and(max-width:1199px) {
+    width: 370px;
+
+    letter-spacing: 0.01em;
+    font-style: normal;
+  }
 }
 
 .license {
@@ -107,19 +109,16 @@ label p {
 }
 
 .modalform__item {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
   color: var(--graphite);
   margin-bottom: 10px;
+  @media screen and(max-width:1199px) {
+    max-width: 370px;
+  }
 }
 
 .modalform__button {
-  justify-content: center;
   margin: auto;
   margin-top: 30px;
-  margin-bottom: 40px;
 }
 
 .input-wrapper {
@@ -148,6 +147,9 @@ label p {
     cursor: pointer;
     outline: none;
   }
+  @media screen and(max-width:1199px) {
+    max-width: 370px;
+  }
 }
 
 .textarea {
@@ -174,6 +176,9 @@ label p {
     line-height: 16px;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
+  }
+  @media screen and(max-width:1199px) {
+    max-width: 370px;
   }
 }
 
@@ -235,9 +240,8 @@ label p {
   letter-spacing: 0.03em;
   color: var(--graphite);
   display: inline-block;
-  @media screen and (min-width: 767px) {
+  @media screen and (max-width: 1199px) {
     font-size: 12px;
-
     font-weight: 400;
     line-height: 14px;
     letter-spacing: 0.03em;

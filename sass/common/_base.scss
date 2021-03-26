@@ -43,11 +43,16 @@ ul {
   padding: 0;
   list-style: none;
 }
+section {
+  @media (min-width: 1200px) {
+    padding: 94px 0px;
+  }
+}
+
 h2 {
   font-size: 36px;
   margin: auto;
   padding-bottom: 50px;
-  padding-top: 94px;
   text-align: center;
   font-weight: 700;
   line-height: 42px;
@@ -57,11 +62,18 @@ h2 {
     line-height: 33px;
     padding-top: 0px;
     padding-bottom: 30px;
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      font-size: 28px;
-      padding-top: 0px;
-      padding-bottom: 30px;
-    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 28px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    line-height: 33px;
+    letter-spacing: 0.03em;
+    text-align: center;
   }
 }
 
@@ -79,13 +91,13 @@ h3 {
 }
 
 .mobile-container {
-  margin: 0 auto;
-
   @media (max-width: 767px) {
     max-width: 480px;
+    margin: auto;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     max-width: 768px;
+    margin: auto;
   }
 }
 

@@ -11,7 +11,7 @@
     />
     <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./mobile.css" />
+    <!-- <link rel="stylesheet" href="./mobile.css" /> -->
   </head>
   <body>
     <div class="mobile-container">
@@ -24,13 +24,14 @@
           aria-controls="mobile-menu"
         >
           <svg
-            width="40px"
-            height="40px"
+            width="24px"
+            height="16px"
             aria-label="Переключатель мобильного меню"
           >
             <use href="./svg-mobile/sprite-mobile-menu.svg#icon-menu-nav"></use>
           </svg>
         </button>
+
         <div class="header">
           <nav class="page-header">
             <ul class="nav">
@@ -77,8 +78,8 @@
             aria-controls="mobile-menu"
           >
             <svg
-              width="40px"
-              height="40px"
+              width="18px"
+              height="18px"
               aria-label="Переключатель мобильного меню"
             >
               <use
@@ -171,8 +172,8 @@
                 </div>
                 <h3>ПЛАНИРОВАНИЕ</h3>
                 <p>
-                  Равным образом консультация с широким активом в <br />
-                  значительной степени обуславливает.
+                  Равным образом консультация с широким активом в значительной
+                  степени обуславливает.
                 </p>
               </li>
 
@@ -373,28 +374,28 @@
               <p class="team__text">UI Designer</p>
               <ul class="social-links">
                 <li>
-                  <a href="">
+                  <a href="" class="team__link">
                     <svg>
                       <use href="./svg/sprite.svg#icon-instagram-team" />
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="#" class="team__link">
                     <svg>
                       <use href="./svg/sprite.svg#icon-twitter-team" />
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="#" class="team__link">
                     <svg>
                       <use href="./svg/sprite.svg#icon-facebook-team" />
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="#" class="team__link">
                     <svg>
                       <use href="./svg/sprite.svg#icon-linkedin-team" />
                     </svg>
@@ -491,7 +492,7 @@
               <ul class="social-links">
                 <li>
                   <a href="">
-                    <svg>
+                    <svg width="22px" height="22px">
                       <use href="./svg/sprite.svg#icon-instagram-footer" />
                     </svg>
                   </a>
@@ -499,7 +500,7 @@
 
                 <li>
                   <a href="">
-                    <svg>
+                    <svg width="22px" height="22px">
                       <use href="./svg/sprite.svg#icon-twitter-footer" />
                     </svg>
                   </a>
@@ -507,7 +508,7 @@
 
                 <li>
                   <a href="">
-                    <svg>
+                    <svg width="22px" height="22px">
                       <use href="./svg/sprite.svg#icon-facebook-footer" />
                     </svg>
                   </a>
@@ -515,7 +516,7 @@
 
                 <li>
                   <a href="">
-                    <svg>
+                    <svg width="22px" height="22px">
                       <use href="./svg/sprite.svg#icon-linkedin-footer" />
                     </svg>
                   </a>
@@ -533,13 +534,13 @@
                   class="footer-input"
                   placeholder="E-mail"
                 />
+                <button class="form__button" type="submit">
+                  Подписаться
+                  <svg class="form__svg" width="24px" height="24px">
+                    <use href="./svg/sprite-form.svg#icon-var-opt"></use>
+                  </svg>
+                </button>
               </div>
-              <button class="form__button" type="submit">
-                Подписаться
-                <svg class="form__svg" width="24px" height="24px">
-                  <use href="./svg/sprite-form.svg#icon-var-opt"></use>
-                </svg>
-              </button>
             </div>
           </form>
         </div>
@@ -571,94 +572,103 @@
           </button>
 
           <form class="modalform">
-            <h2 class="modalform__h2">
-              Оставьте свои данные, мы вам перезвоним
-            </h2>
-            <ul class="modalform__list">
-              <li>
-                <div class="modalform__item">
-                  <label for="name" class="modalform__label">
-                    <p>Имя</p>
-                    <div class="input-wrapper">
-                      <input type="text" class="modalform__input" name="name" />
-                      <svg class="modalform__icon">
-                        <use
-                          href="./svg/sprite-form.svg#icon-person-black-18dp-opt"
-                        ></use>
-                      </svg>
-                    </div>
-                  </label>
-                </div>
-              </li>
-
-              <li>
-                <div class="modalform__item">
-                  <label for="tel" class="modalform__label">
-                    <p>Телефон</p>
-                    <div class="input-wrapper">
-                      <input type="tel" class="modalform__input" name="phone" />
-                      <svg class="modalform__icon">
-                        <use
-                          href="./svg/sprite-form.svg#icon-phone-black-18dp-1-opt"
+            <div class="modalform__list">
+              <h2 class="modalform__h2">
+                Оставьте свои данные, мы вам перезвоним
+              </h2>
+              <ul>
+                <li>
+                  <div class="modalform__item">
+                    <label for="name" class="modalform__label">
+                      <p>Имя</p>
+                      <div class="input-wrapper">
+                        <input
+                          type="text"
+                          class="modalform__input"
+                          name="name"
                         />
-                      </svg>
-                    </div>
-                  </label>
-                </div>
-              </li>
-              <li>
-                <div class="modalform__item">
-                  <label for="email" class="modalform__label">
-                    <p>Почта</p>
-                    <div class="input-wrapper">
-                      <svg class="modalform__icon">
-                        <use
-                          href="./svg/sprite-form.svg#icon-email-black-18dp-1-optim"
+                        <svg class="modalform__icon">
+                          <use
+                            href="./svg/sprite-form.svg#icon-person-black-18dp-opt"
+                          ></use>
+                        </svg>
+                      </div>
+                    </label>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="modalform__item">
+                    <label for="tel" class="modalform__label">
+                      <p>Телефон</p>
+                      <div class="input-wrapper">
+                        <input
+                          type="tel"
+                          class="modalform__input"
+                          name="phone"
                         />
-                      </svg>
-                      <input
-                        type="email"
-                        class="modalform__input"
-                        name="email"
-                        placeholder=""
-                      />
-                    </div>
+                        <svg class="modalform__icon">
+                          <use
+                            href="./svg/sprite-form.svg#icon-phone-black-18dp-1-opt"
+                          />
+                        </svg>
+                      </div>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="modalform__item">
+                    <label for="email" class="modalform__label">
+                      <p>Почта</p>
+                      <div class="input-wrapper">
+                        <svg class="modalform__icon">
+                          <use
+                            href="./svg/sprite-form.svg#icon-email-black-18dp-1-optim"
+                          />
+                        </svg>
+                        <input
+                          type="email"
+                          class="modalform__input"
+                          name="email"
+                          placeholder=""
+                        />
+                      </div>
+                    </label>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="modalform__item">
+                    <label for="" class="modalform__label">
+                      <p>Комментарий</p>
+                    </label>
+                    <textarea
+                      name="comment"
+                      id="comment"
+                      placeholder="Введите текст"
+                      class="textarea"
+                    ></textarea>
+                  </div>
+                </li>
+
+                <li>
+                  <label for="checkbox" class="checkbox__item">
+                    <input
+                      name="license agreement"
+                      type="checkbox"
+                      class="checkbox"
+                      id="checkbox"
+                    />
+                    <span class="checkbox__icon"></span>
+                    <span class="checkbox__text" for="checkbox">
+                      Соглашаюсь с рассылкой и принимаю
+                      <span class="license">Условия договора</span></span
+                    >
                   </label>
-                </div>
-              </li>
-
-              <li>
-                <div class="modalform__item">
-                  <label for="" class="modalform__label">
-                    <p>Комментарий</p>
-                  </label>
-                  <textarea
-                    name="comment"
-                    id="comment"
-                    placeholder="Введите текст"
-                    class="textarea"
-                  ></textarea>
-                </div>
-              </li>
-
-              <li>
-                <label for="checkbox" class="checkbox__item">
-                  <input
-                    name="license agreement"
-                    type="checkbox"
-                    class="checkbox"
-                    id="checkbox"
-                  />
-                  <span class="checkbox__icon"></span>
-                  <span class="checkbox__text" for="checkbox">
-                    Соглашаюсь с рассылкой и принимаю
-                    <span class="license">Условия договора</span></span
-                  >
-                </label>
-              </li>
-
+                </li>
+              </ul>
               <button type="submit" class="modalform__button">Отправить</button>
-            </ul>
+            </div>
           </form>
         </div>
       </div>

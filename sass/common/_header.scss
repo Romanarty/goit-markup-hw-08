@@ -1,15 +1,28 @@
 /* header */
 header {
-  border-bottom: var(--border) 1px solid;
+  border-bottom: 1px solid #ececec;
+  @include flex-between();
+  max-width: 1200px;
+  margin: 0px 15px;
+  @include flex-between();
+  padding: 0px 15px;
+  position: relative;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-height: 80px;
+    padding: 0px 15px;
+    @include flex-center();
+  }
 }
 .header {
   padding-right: 15px;
   padding-left: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex-between();
   max-width: 1170px;
   margin: auto;
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
 
 .page-header {
@@ -17,19 +30,6 @@ header {
   justify-content: space-between;
   outline: 1px var(--border);
   min-height: 80px;
-}
-header {
-  @media (max-width: 767px) {
-    @include flex-between();
-    padding: 0px 15px;
-    position: relative;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    max-height: 80px;
-    padding: 0px 15px;
-    border-bottom: 1px solid #ececec;
-    @include flex-center();
-  }
 }
 
 .mobile-nav.js-menu-container {
@@ -41,29 +41,5 @@ header {
 .mobile-nav {
   @media (max-width: 767px) {
     display: none;
-  }
-}
-.header-contacts {
-  @media (max-width: 767px) {
-    display: none;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    display: block;
-    width: 138px;
-    padding: 20px 0;
-    align-items: center;
-  }
-}
-.contacts-link__phone,
-.contacts-link__mail {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    padding: 0px;
-    margin: 5px 0;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 14px;
-    letter-spacing: 0.02em;
-    margin-right: auto;
   }
 }

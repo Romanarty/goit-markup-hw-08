@@ -1,5 +1,11 @@
 //  Примеры работ
 .projects {
+  @media screen and (min-width: 1200px) {
+    & h2 {
+      padding-top: 94px;
+    }
+  }
+
   @media screen and (max-width: 1199px) {
     display: none;
   }
@@ -19,7 +25,7 @@
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
   color: var(--main-white);
-  @include flex-center(center);
+  @include flex-center();
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
