@@ -189,12 +189,9 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 1200px;
-  margin: 0px 15px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 0px 15px;
   position: relative;
+  margin: auto;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -225,8 +222,6 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 1170px;
-  margin: auto;
 }
 
 @media (max-width: 767px) {
