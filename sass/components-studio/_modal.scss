@@ -125,7 +125,7 @@ input[id="comment"] {
   display: block;
   position: relative;
 
-  &:focus-within > .form-icon {
+  &:focus-within > .modalform__icon {
     fill: var(--hover);
     cursor: pointer;
   }

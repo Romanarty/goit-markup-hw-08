@@ -656,6 +656,9 @@ header {
   .our-team {
     padding-bottom: 45px;
   }
+  .our-team h2 {
+    padding-bottom: 15px;
+  }
 }
 
 .our-team .team {
@@ -812,6 +815,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-bottom: 45px;
 }
 
 .clients__link h2 {
@@ -1421,7 +1425,7 @@ input[id="comment"] {
   position: relative;
 }
 
-.input-wrapper:focus-within > .form-icon {
+.input-wrapper:focus-within > .modalform__icon {
   fill: var(--hover);
   cursor: pointer;
 }
