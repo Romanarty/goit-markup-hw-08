@@ -1565,7 +1565,7 @@ input[id="comment"] {
 
 .checkbox:checked + .checkbox__icon {
   background-color: var(--hover);
-  background-image: url(../../svg/icon-check.svg);
+  background-image: url(../svg/icon-check.svg);
   background-size: contain;
   background-origin: border-box;
   border-color: transparent;
