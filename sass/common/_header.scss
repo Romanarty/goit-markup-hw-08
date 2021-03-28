@@ -1,5 +1,5 @@
 /* header */
-header {
+.mobile-container {
   max-width: 1200px;
   padding: 0px 15px;
   margin: auto;
@@ -13,6 +13,16 @@ header {
     padding: 0px 15px;
     margin: auto;
     @include flex-center();
+  }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    max-width: 480px;
+  }
+  @media screen and (max-width: 479px) {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 

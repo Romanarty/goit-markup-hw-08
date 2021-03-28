@@ -118,22 +118,22 @@ h3 {
 
 @media (max-width: 479px) {
   .mobile-container {
-    max-width: 320px;
+    width: 380px;
     margin: auto;
+    padding: 0px 15px;
+    display: block;
   }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
   .mobile-container {
     max-width: 480px;
-    margin: auto;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .mobile-container {
     max-width: 768px;
-    margin: auto;
   }
 }
 
@@ -183,7 +183,7 @@ span {
 }
 
 /* header */
-header {
+.mobile-container {
   max-width: 1200px;
   padding: 0px 15px;
   margin: auto;
@@ -201,7 +201,7 @@ header {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  header {
+  .mobile-container {
     max-width: 768px;
     max-height: 80px;
     padding: 0px 15px;
@@ -215,6 +215,22 @@ header {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .mobile-container {
+    max-width: 480px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .mobile-container {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -1168,7 +1184,6 @@ footer {
     position: fixed;
     top: 0;
     left: 0;
-    max-height: 796px;
     width: 100vw;
     display: block;
     padding: 0px 40px;
@@ -1176,8 +1191,8 @@ footer {
     z-index: 999;
     background-color: #fff;
     opacity: 0;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
     -webkit-transition: -webkit-transform 250ms ease-in-out;
     transition: -webkit-transform 250ms ease-in-out;
     transition: transform 250ms ease-in-out;
@@ -1186,6 +1201,12 @@ footer {
   .mobile-nav.js-menu-container:hover {
     -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  }
+}
+
+@media (max-width: 479px) {
+  .mobile-nav.js-menu-container {
+    height: 100vh;
   }
 }
 
@@ -1203,8 +1224,8 @@ footer {
 
 @media (max-width: 767px) {
   .mobile-nav.js-menu-container.is-open {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
   }
 }

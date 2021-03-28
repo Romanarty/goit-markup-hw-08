@@ -1,15 +1,28 @@
 /* Hero */
 .hero {
+  margin: auto;
   color: var(--main-white);
   & button {
     margin: auto;
   }
   @media (max-width: 479px) {
-    background-color: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    );
+    height: 300px;
+    margin: auto;
+    background-size: cover;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(" ../images/banner/1xbanner.jpeg");
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/banner/2xbanner.jpeg");
+    }
   }
 
   @media (min-width: 1200px) {
@@ -88,12 +101,25 @@ h1 {
   margin-top: 200px;
   margin-bottom: 30px;
   font-size: 44px;
-  display: inline-block;
+  display: block;
   font-weight: 900;
   line-height: 60px;
   letter-spacing: 0.06em;
   text-align: center;
-  @media (max-width: 767px) {
+  @media (max-width: 479px) {
+    width: 60%;
+    font-size: 16px;
+    line-height: 24px;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    opacity: 0.8;
+    &:hover {
+      opacity: 0;
+    }
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     font-size: 26px;
     line-height: 42px;
     letter-spacing: 0.06em;
@@ -122,4 +148,17 @@ h1 {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   padding: 10px 32px;
   margin-bottom: 200px;
+  opacity: 0.9;
+
+  @media (max-width: 479px) {
+    margin-top: auto;
+    border-radius: 0;
+    &:hover,
+    &:focus {
+      background-color: teal;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 6px;
+    }
+  }
 }

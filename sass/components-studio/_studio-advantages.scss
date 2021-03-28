@@ -6,7 +6,7 @@
   margin: 0px auto;
   @media screen and (min-width: 320px) and (max-width: 479px) {
     margin: auto;
-    max-width: 320px;
+    width: 350px;
   }
   @media screen and (min-width: 479px) and (max-width: 767px) {
     max-width: 480px;
@@ -29,9 +29,8 @@
   margin: 0px;
 
   @media screen and (max-width: 479px) {
-    width: 320px;
-    margin: auto;
-    display: block;
+    width: 100%;
+    padding: 45px 0px;
   }
   @media screen and (min-width: 480px) and (max-width: 767px) {
     max-width: 480px;
@@ -82,18 +81,16 @@
     height: 70px;
     width: 70px;
     background-color: var(--grey);
+    margin: auto;
   }
   @media screen and (max-width: 479px) {
-    width: 270px;
     height: 120px;
-    margin: auto;
-    display: block;
-    padding: 25px 100px;
+
+    padding: 25px 125px;
   }
   @media (min-width: 1200px) {
     width: 270px;
     height: 120px;
-    padding: 25px 100px;
   }
   background-color: #f5f4fa;
   border-radius: 4px;
@@ -122,8 +119,8 @@
 
 .advantage li {
   @media screen and (max-width: 479px) {
-    width: 270px;
-    height: 251px;
+    width: 320px;
+    height: 250px;
     margin: auto;
     display: block;
     margin-bottom: 15px;
