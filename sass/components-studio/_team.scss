@@ -9,6 +9,10 @@
   margin: auto;
 }
 .our-team {
+  @media screen and (max-width: 479px) {
+    margin: auto;
+  }
+
   @media (min-width: 1200px) {
   }
   background-color: #f5f4fa;

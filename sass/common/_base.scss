@@ -90,7 +90,11 @@ h3 {
 }
 
 .mobile-container {
-  @media (max-width: 767px) {
+  @media (max-width: 479px) {
+    max-width: 320px;
+    margin: auto;
+  }
+  @media (min-width: 480px) and (max-width: 767px) {
     max-width: 480px;
     margin: auto;
   }
